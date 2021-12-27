@@ -145,11 +145,15 @@
       font-size: 32px;
       font-family: 'Bellefair', serif;
       letter-spacing: 2px;
+      color: black;
+      
+    }
+    .btn-link {
+      text-decoration: none;
     }
 
-    .btn-home a {
+    .btn-link a {
       text-decoration: none;
-      color: black;
     }
 
     .btn-home::after {
