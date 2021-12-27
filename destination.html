@@ -1,0 +1,143 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body id="moon">
+  <nav>
+    <div class="container-fluid  ps-4 mt-lg-3 mt-0">
+      <div class="row">
+        <div class="col-4 col-lg-5">
+          <span class="d-flex align-items-center py-4">
+            <img src="/assets/home/logo.png" alt="">
+            <hr class=" ms-5 d-none d-md-block">
+          </span>
+        </div>
+        <div class="col-lg-7 col-8 align-self-center py-4 bd-filter text-end">
+          <ul
+            class="text-uppercase d-sm-flex justify-content-lg-evenly justify-content-between m-0 d-none position-relative "
+            id="act-ul">
+            <li class="act-effect">
+              <a href="/index.html"><span class="fw-bold d-none d-md-inline">00</span> Home</a>
+            </li>
+            <li class="act-effect active-menu">
+              <a href="/destination.html"><span class="fw-bold d-none d-md-inline">01</span>
+                Destination</a>
+            </li>
+            <li class="act-effect">
+              <a href="/crew.html"><span class="fw-bold d-none d-md-inline">02</span> Crew</a>
+            </li>
+            <li class="act-effect">
+              <a href="/technology.html"><span class="fw-bold d-none d-md-inline">03</span> Technology</a>
+            </li>
+          </ul>
+          <button class="btn d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel" class="text-uppercase">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="text-uppercase text-dark ps-0">
+            <li class="">
+              <a href="/index.html"><span class="fw-bold">00</span> Home</a>
+            </li>
+            <li class="activeCanvas">
+              <a href="/destination.html"><span class="fw-bold">01</span> Destination</a>
+            </li>
+            <li>
+              <a href="/crew.html"><span class="fw-bold">02</span> Crew</a>
+            </li>
+            <li>
+              <a href="/technology.html"><span class="fw-bold">03</span> Technology</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <aside>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="text-uppercase title-internal-page">
+            <span>01</span> Pick your destination
+          </h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-6 offset-lg-6 mt-4">
+          <div class="row">
+            <div class="col-lg-7 col-9 mx-lg-0 mx-auto ps-3">
+              <ul class="ps-0 d-flex justify-content-between subtitle-planet" id="act-sub-ul">
+                <li><a href="/destination.html" class="internal sub-active act-sub-effect">Moon</a></li>
+                <li><a href="/destination-mars.html" class="internal act-sub-effect">Mars</a></li>
+                <li><a href="/destination-europa.html" class="internal act-sub-effect">Europa</a></li>
+                <li><a href="/destination-titan.html" class="internal act-sub-effect">Titan</a></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </aside>
+  <section id="planets" class="mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 text-lg-start text-center">
+          <img src="/assets/destination/image-moon.png" class="img-fluid" alt="Moon">
+
+        </div>
+        <div class="col-lg-6 text-white">
+          <div class="row">
+            <div class="col-12">
+              <h2 class="text-uppercase title-planet text-lg-start text-center mt-4 mt-lg-2" id="title">
+                Moon
+              </h2>
+              <p class="text-planet text-lg-start text-center mb-5">
+                See our planet as you’ve never seen it before. A perfect relaxing trip away to help
+                regain perspective and come back refreshed. While you’re there, take in some history
+                by visiting the Luna 2 and Apollo 11 landing sites.
+              </p>
+            </div>
+          </div>
+          <hr>
+          <div class="row mt-4 text-lg-start text-center">
+            <div class="col-6">
+              <span class="d-block subheading-2-planet">Avg. distance</span>
+              <span class="subheading-1-planet">384,400 km</span>
+            </div>
+            <div class="col-6">
+              <p>
+                <span class="d-block subheading-2-planet">Est. travel time</span>
+                <span class="subheading-1-planet">3 days</span>
+              </p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+  <script src="script.js"></script>
+</body>
+
+</html>

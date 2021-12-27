@@ -1,0 +1,500 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Barlow+Condensed:wght@400;600;700&family=Bellefair&display=swap');
+/* BODY STYLES */
+
+    body#home{
+      background-image: url("/assets/home/background-home-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+      font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    body#moon {
+        background-image: url("/assets/destination/background-destination-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    body#crew {
+        background-image: url("/assets/crew/background-crew-desktop.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: right;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    body#tech {
+      background-image: url("/assets/technology/background-technology-desktop.jpg");
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: right;
+      font-family: 'Barlow Condensed', sans-serif;
+  }
+
+    /* MENU STYLES */
+
+    nav {
+      font-size: 16px;
+    }
+    nav li {
+      position: relative;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      letter-spacing: 2.7px;
+    }
+
+    nav a:hover {
+        color: white;
+    }
+
+    nav a:after {
+      transition: all ease-in-out .1s;
+      background: none repeat scroll 0 0 #ffffff5d;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      position: absolute;
+      bottom: -23px;
+    }
+
+    .active-menu::after {
+      background: none repeat scroll 0 0 #ffffff;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: -23px;
+      z-index: 5;
+    }
+
+    nav a:hover:after {
+      width: 100%;
+    }
+
+
+    #offcanvasRight {
+      width: 200px;
+    }
+
+    #offcanvasRight a {
+      color: black;
+    }
+
+    #offcanvasRight li:hover {
+        background: #00000038;
+    }
+
+    #offcanvasRight .activeCanvas {
+        background: #00000038;
+    }
+
+    nav hr {
+      width: 100%;
+      opacity: 1;
+      margin-right: -35px;
+      z-index: 1;
+    }
+
+    ul {
+      list-style: none;
+    }
+
+    .bd-filter {
+      backdrop-filter: blur(100px);
+      padding-right: 75px;
+    }
+
+    /* HOME STYLES */
+
+    .sub-h1-home {
+      font-size: 28px;
+      line-height: 33px;
+      letter-spacing: 4.75px;
+      color: #D0D6F9;
+    }
+
+    .h1-home {
+      font-family: 'Bellefair', serif;
+      font-size: 150px;
+      line-height: 172px;
+    }
+
+    .p-home {
+      font-size: 18px;
+      line-height: 32px;
+      font-family: 'Barlow', sans-serif;
+      color: #D0D6F9;
+    }
+
+    .mt-home {
+      margin-top: 140px;
+      margin-bottom: 100px;
+    }
+
+    .btn-home {
+      position: relative;
+      background-color: white;
+      border-radius: 100%;
+      height: 274px;
+      width: 274px;
+      font-size: 32px;
+      font-family: 'Bellefair', serif;
+      letter-spacing: 2px;
+    }
+
+    .btn-home a {
+      text-decoration: none;
+      color: black;
+    }
+
+    .btn-home::after {
+      position: absolute;
+      content: "";
+      right: 0;
+      left: -23%;
+      top: -23%;
+      border-radius: 100%;
+      bottom: 0;
+      z-index: -2;
+    }
+
+    .btn-home:hover {
+      transform: scale(0.9);
+      transition: transform 250ms ease-in;
+      cursor: pointer;
+    }
+
+    .btn-home:hover::after {
+      transition: 350ms ease-in;
+      background: rgba(128, 128, 128, 0.412);
+      height: 400px;
+      width: 400px;
+      z-index: -1;
+    }
+
+    .bar1,
+    .bar2,
+    .bar3 {
+      width: 35px;
+      height: 5px;
+      background-color: rgb(255, 255, 255);
+      margin: 6px 0;
+      border-radius: 15%;
+    }
+
+    /* DESTINATION STYLES */
+
+    .title-internal-page {
+        color: white;
+        font-size: 28px;
+        letter-spacing: 4.72px;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+    .title-internal-page span {
+        color: white;
+        font-size: 28px;
+        font-weight: 700;
+        opacity: 0.25;
+        letter-spacing: 4.72px;
+        font-family: 'Barlow Condensed', sans-serif;
+    }
+
+    .title-planet {
+        font-size: 100px;
+        font-family: 'Bellefair', serif;
+        color: white;
+    }
+    .subtitle-planet a {
+        text-transform: uppercase;
+        color: #D0D6F9;
+        font-size: 16px;
+        letter-spacing: 2.7px;
+        text-decoration: none;
+    }
+
+    .text-planet {
+        font-family: 'Barlow', sans-serif;
+        font-size: 17px;
+        line-height: 32px;
+        color: #D0D6F9;
+    }
+
+    .subheading-1-planet {
+      font-family: 'Bellefair', serif;
+      font-size: 28px;
+      color: white;
+      text-transform: uppercase;
+      
+    }
+    .subheading-2-planet {
+      font-family: 'Barlow Condensed', sans-serif;
+      font-size: 14px;
+      letter-spacing: 2.35px;
+      color: #D0D6F9;
+      text-transform: uppercase;
+    }
+    
+    aside li {
+      position: relative;
+    }
+
+    aside a:hover {
+        color: white;
+    }
+
+    aside a:after {
+      transition: all ease-in-out .1s;
+      background: none repeat scroll 0 0 #ffffff5d;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 0;
+      position: absolute;
+      bottom: -13px;
+      left: -1px;
+    }
+
+    .sub-active {
+      color: white !important;
+    }
+
+    .sub-active::after {
+      background: none repeat scroll 0 0 #ffffff;
+      content: "";
+      display: block;
+      height: 2px;
+      width: 100%;
+      position: absolute;
+      bottom: -13px;
+      left: -1px;
+      z-index: 5;
+    }
+
+    aside a:hover:after {
+      width: 100%;
+    }
+
+
+    /*CREW AND TECH STYLES*/
+
+    .heading-crewname, .heading-tech {
+      font-family: 'Bellefair', serif;
+      font-size: 56px;
+      color: white;
+      text-transform: uppercase;
+    }
+    .heading-crewfunction {
+      font-family: 'Bellefair', serif;
+      font-size: 32px;
+      color: white;
+      opacity: 0.5;
+      text-transform: uppercase;
+    }
+    .p-crew, .p-tech {
+      font-size: 18px;
+      line-height: 32px;
+      font-family: 'Barlow', sans-serif;
+      color: #D0D6F9;
+    }
+
+
+/*CAROUSEL CREW */
+
+    .carousel-indicators.crew {
+      display: block;
+      margin-left: 0;
+      margin-right: 0;
+      margin-bottom: 0;
+      top: 32em;
+    }
+    .carousel-indicators.crew button {
+      opacity: 0.2 !important;
+    }
+
+    .carousel-indicators.crew button:hover {
+      opacity: 0.5 !important;
+    }
+    .carousel-indicators.crew .active {
+      opacity: 1 !important;
+    }
+    .btn-radius {
+      width: 20px !important;
+      height: 20px !important;
+      border-radius: 100%;
+      margin-right: 12px !important;
+      margin-left: 12px !important;
+    }
+
+
+/*TECHNOLOGY STYLES*/
+
+.pre-title-tech {
+  font-size: 16px;
+  line-height: 19px;
+  font-family: 'Barlow Condensed', sans-serif;
+  letter-spacing: 2.7px;
+  color: #D0D6F9;
+  text-transform: uppercase;
+}
+
+
+/*CAROUSEL TECHNOLOGY*/
+
+.carousel-indicators.tech {
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+  top: 0;
+  
+  right: initial;
+}
+.carousel-indicators.tech button {
+/*  opacity: 0.2;*/
+}
+
+.carousel-indicators.tech button:hover {
+  border: 1px solid rgb(255, 255, 255) !important;
+
+}
+.carousel-indicators.tech .active {
+ opacity: 1 !important;
+  background: white !important;
+  color: black !important;
+}
+
+.btn-tech {
+  text-indent: initial !important;
+  width: 80px !important;
+  height: 80px !important;
+  border-radius: 100%;
+  margin-right: 12px !important;
+  margin-left: 12px !important;
+  background: transparent !important;
+  border: 1px solid rgba(255, 255, 255, 0.337) !important;
+  font-family: 'Bellefair', serif !important;
+  font-size: 32px;
+  color: white;
+  opacity: 1 !important;
+}
+
+    /* MEDIA QUERIES */
+
+    @media (max-width: 1033px) {
+      .heading-tech {
+        font-size: 46px;
+      }     
+    }
+
+    @media (max-width: 991px) {
+      .bd-filter {
+        backdrop-filter: blur(500px);
+        padding-right: 2px;
+      }
+      .carousel-indicators.crew {
+        top: 22em;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: flex;
+      }
+      .mt-tech {
+        margin-top: 200px;
+      }
+      .carousel-indicators.tech {
+        top: initial;
+        bottom: 310px;
+        right: 0;
+      }
+    }
+
+    @media (max-width: 768px) {
+      body#home {
+        background-image: url("/assets/home/background-home-tablet.jpg");
+      }
+      body#moon {
+        background-image: url("/assets/destination/background-destination-tablet.jpg");
+      }
+      body#crew {
+        background-image: url("/assets/crew/background-crew-tablet.jpg");
+      }
+      body#tech {
+        background-image: url("/assets/technology/background-technology-tablet.jpg");
+    }
+      .bd-filter {
+        backdrop-filter: none;
+        padding-right: 2px;
+      }
+      .heading-crewname {
+        font-family: 'Bellefair', serif;
+        font-size: 40px;
+        color: white;
+        text-transform: uppercase;
+      }
+      .heading-crewfunction {
+        font-family: 'Bellefair', serif;
+        font-size: 24px;
+        color: white;
+        opacity: 0.5;
+        text-transform: uppercase;
+      }
+      .p-crew {
+        font-size: 16px;
+        line-height: 28px;
+        font-family: 'Barlow', sans-serif;
+        color: #D0D6F9;
+      }
+      .carousel-indicators.crew {
+        top: initial;
+        bottom: 18em;
+      }
+      .carousel-indicators.tech {
+        bottom: 360px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      body#home{
+        background-image: url("/assets/home/background-home-mobile.jpg");
+      }
+      body#moon {
+        background-image: url("/assets/destination/background-destination-mobile.jpg");
+      }
+      body#crew {
+        background-image: url("/assets/crew/background-crew-mobile.jpg");
+      }
+      body#tech {
+        background-image: url("/assets/technology/background-technology-mobile.jpg");
+    }
+      .heading-crewname {
+        font-size: 24px;
+
+      }
+      .heading-crewfunction {
+        font-size: 16px;
+
+      }
+      .p-crew {
+        font-size: 15px;
+        line-height: 25px;
+      }
+      .carousel-indicators.tech {
+        bottom: 430px;
+      }
+    }
+
+    @media (max-width: 450px) {
+      .carousel-indicators.tech {
+        bottom: 510px;
+      }    
+    }
+
+    @media (max-width: 330px) {
+      .carousel-indicators.tech {
+        bottom: 550px;
+      }    
+    }

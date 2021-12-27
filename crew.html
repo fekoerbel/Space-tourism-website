@@ -1,0 +1,185 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Space tourism website</title>
+</head>
+
+<body id="moon">
+  <nav>
+    <div class="container-fluid  ps-4 mt-lg-3 mt-0">
+      <div class="row">
+        <div class="col-4 col-lg-5">
+          <span class="d-flex align-items-center py-4">
+            <img src="/assets/home/logo.png" alt="">
+            <hr class=" ms-5 d-none d-md-block">
+          </span>
+        </div>
+        <div class="col-lg-7 col-8 align-self-center py-4 bd-filter text-end">
+          <ul
+            class="text-uppercase d-sm-flex justify-content-lg-evenly justify-content-between m-0 d-none position-relative "
+            id="act-ul">
+            <li class="act-effect">
+              <a href="/index.html"><span class="fw-bold d-none d-md-inline">00</span> Home</a>
+            </li>
+            <li class="act-effect">
+              <a href="/destination.html"><span class="fw-bold d-none d-md-inline">01</span>
+                Destination</a>
+            </li>
+            <li class="act-effect active-menu">
+              <a href="/crew.html"><span class="fw-bold d-none d-md-inline active-menu">02</span> Crew</a>
+            </li>
+            <li class="act-effect">
+              <a href="/technology.html"><span class="fw-bold d-none d-md-inline">03</span> Technology</a>
+            </li>
+          </ul>
+          <button class="btn d-sm-none" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+            aria-controls="offcanvasRight">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+          </button>
+        </div>
+      </div>
+      <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <h5 id="offcanvasRightLabel" class="text-uppercase">Menu</h5>
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+          <ul class="text-uppercase text-dark ps-0">
+            <li class="">
+              <a href="/index.html"><span class="fw-bold">00</span> Home</a>
+            </li>
+            <li class="">
+              <a href="/destination.html"><span class="fw-bold">01</span> Destination</a>
+            </li>
+            <li class="activeCanvas">
+              <a href="/crew.html"><span class="fw-bold">02</span> Crew</a>
+            </li>
+            <li>
+              <a href="/technology.html"><span class="fw-bold">03</span> Technology</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  </nav>
+  <aside>
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-12">
+          <h2 class="text-uppercase title-internal-page">
+            <span>02</span> Meet your crew
+          </h2>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <section id="crew" class="mt-4">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="false">
+            <div class="carousel-indicators crew">
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active btn-radius"
+                aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2" class="btn-radius"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3" class="btn-radius"></button>
+              <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
+                aria-label="Slide 4" class="btn-radius"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="row">
+                  <div class="col-lg-6 align-self-center order-1 order-md-0 mb-5 mb-lg-2 mt-5 mt-lg-2">
+                    <h3 class="heading-crewfunction text-center text-lg-start mt-5 mt-lg-2">
+                      Commander
+                    </h3>
+                    <h2 class="heading-crewname text-center text-lg-start">
+                      Douglas Hurley
+                    </h2>
+                    <p class="p-crew pe-0 pe-lg-5 me-2 me-lg-5 text-center text-lg-start">
+                      Douglas Gerald Hurley is an American engineer, former Marine Corps pilot and former NASA astronaut. He launched into space for the third time as commander of Crew Dragon Demo-2.
+                    </p>
+                  </div>
+                  <div class="col-lg-6 order-0 order-md-1 text-center mt-5 mt-lg-2">
+                    <img src="/assets/crew/image-douglas-hurley.png" class="img-fluid" alt="Douglas Hurley">
+                    <hr class="d-block d-md-none opacity-100 mt-0 mb-5">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-6 align-self-center order-1 order-md-0 mb-5 mb-lg-2 mt-5 mt-lg-2">
+                    <h3 class="heading-crewfunction text-center text-lg-start mt-5 mt-lg-2">
+                      Mission Specialist
+                    </h3>
+                    <h2 class="heading-crewname text-center text-lg-start">
+                      Mark Shuttleworth
+                    </h2>
+                    <p class="p-crew pe-0 pe-lg-5 me-2 me-lg-5 text-center text-lg-start">
+                      Mark Richard Shuttleworth is the founder and CEO of Canonical, the company behind the Linux-based Ubuntu operating system. Shuttleworth became the first South African to travel to space as a space tourist.                    </p>
+                  </div>
+                  <div class="col-lg-6 order-0 order-md-1 text-center mt-5 mt-lg-2">
+                    <img src="/assets/crew/image-mark-shuttleworth.png" class="img-fluid" alt="Mark Shuttleworth">
+                    <hr class="d-block d-md-none opacity-100 mt-0 mb-5">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-6 align-self-center order-1 order-md-0 mb-5 mb-lg-2 mt-5 mt-lg-2">
+                    <h3 class="heading-crewfunction text-center text-lg-start mt-5 mt-lg-2">
+                      Pilot
+                    </h3>
+                    <h2 class="heading-crewname text-center text-lg-start">
+                      Victor Glover
+                    </h2>
+                    <p class="p-crew pe-0 pe-lg-5 me-2 me-lg-5 text-center text-lg-start">
+                      Pilot on the first operational flight of the SpaceX Crew Dragon to the International Space Station. Glover is a commander in the U.S. Navy where he pilots an F/A-18.He was a crew member of Expedition 64, and served as a station systems flight engineer.                     </p>
+                  </div>
+                  <div class="col-lg-6 order-0 order-md-1 text-center mt-5 mt-lg-2">
+                    <img src="/assets/crew/image-victor-glover.png" class="img-fluid" alt="Victor Glover">
+                    <hr class="d-block d-md-none opacity-100 mt-0 mb-5">
+                  </div>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <div class="row">
+                  <div class="col-lg-6 align-self-center order-1 order-md-0 mb-5 mb-lg-2 mt-5 mt-lg-2">
+                    <h3 class="heading-crewfunction text-center text-lg-start mt-5 mt-lg-2">
+                      Flight Engineer
+                    </h3>
+                    <h2 class="heading-crewname text-center text-lg-start">
+                      Anousheh Ansari
+                    </h2>
+                    <p class="p-crew pe-0 pe-lg-5 me-2 me-lg-5 text-center text-lg-start">
+                      Anousheh Ansari is an Iranian American engineer and co-founder of Prodea Systems. Ansari was the fourth self-funded space tourist, the first self-funded woman to fly to the ISS, and the first Iranian in space.                     </p>
+                  </div>
+                  <div class="col-lg-6 order-0 order-md-1 text-center mt-5 mt-lg-2">
+                    <img src="/assets/crew/image-anousheh-ansari.png" class="img-fluid" alt="Anousheh Ansari">
+                    <hr class="d-block d-md-none opacity-100 mt-0 mb-5">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous">
+    </script>
+  <script src="script.js"></script>
+</body>
+
+</html>
