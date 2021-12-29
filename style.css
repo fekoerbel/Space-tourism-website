@@ -523,3 +523,18 @@
         bottom: 440px;
       }    
     }
+
+    /*ANIMATION*/
+
+    @keyframes rotation {
+      0% {
+        transform: rotate(0);
+      }
+      100% {
+        transform: rotate(360deg);
+      }
+    }
+
+    .planet-rotation {
+      animation: rotation 20s linear infinite;
+    }
