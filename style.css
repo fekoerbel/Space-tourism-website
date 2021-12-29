@@ -487,18 +487,43 @@
         line-height: 25px;
       }
       .carousel-indicators.tech {
-        bottom: 430px;
+        bottom: 345px;
       }
+      .h1-home {
+        font-size: 100px;
+      }
+      .sub-h1-home {
+        font-size: 20px;
+
+      }
+      .p-home {
+        font-size: 16px;
+      }
+      .title-planet {
+        font-size: 75px;
+     }
+     .text-planet {
+       font-size: 15px;
+     }
+     .heading-tech {
+       font-size: 35px;
+     }
+     .pre-title-tech {
+       font-size: 14px;
+     }
+     .p-tech {
+       font-size: 16px;
+     }
     }
 
     @media (max-width: 450px) {
       .carousel-indicators.tech {
-        bottom: 510px;
+        bottom: 380px;
       }    
     }
 
     @media (max-width: 330px) {
       .carousel-indicators.tech {
-        bottom: 550px;
+        bottom: 440px;
       }    
     }
