@@ -105,7 +105,7 @@
     }
 
     .bd-filter {
-      backdrop-filter: blur(100px);
+      backdrop-filter: blur(20px);
       padding-right: 75px;
     }
 
@@ -395,10 +395,6 @@
     }
 
     @media (max-width: 991px) {
-      .bd-filter {
-        backdrop-filter: blur(500px);
-        padding-right: 2px;
-      }
       .carousel-indicators.crew {
         top: 22em;
         left: 0;
